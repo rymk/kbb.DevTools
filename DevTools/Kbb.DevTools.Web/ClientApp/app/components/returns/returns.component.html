@@ -1,0 +1,23 @@
+﻿<h1>Returns</h1>
+
+<!-- TODO: make the loader reusable? where is the styling coming from? -->
+<p *ngIf="!returns"><em>Loading...</em></p>
+
+<table class='table' *ngIf="returns">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>ReturnID</th>
+            <th>OrderNumber</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let theReturn of returns">
+            <td>{{ theReturn.dateCreated }}</td>
+            <td>{{ theReturn.returnId }}</td>
+            <td>{{ theReturn.orderNumber }}</td>
+            <td>TODO</td>
+        </tr>
+    </tbody>
+</table>

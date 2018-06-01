@@ -1,0 +1,85 @@
+﻿<h1>New Return</h1>
+
+<!-- TODO: make the loader reusable? where is the styling coming from? -->
+<p *ngIf="!doneGettingData"><em>Loading...</em></p>
+
+<!-- TODO: add for="inputName" to each <label> and bind to Angular model -->
+
+<div class="container">
+    <form #returnForm="ngForm" (ngSubmit)="onClickSubmit(returnForm.value)" >
+        <div class="row">
+            <h4>Return Info</h4>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="clientOrderNumber">Order Number:</label>
+            <input type="text" name="clientOrderNumber" ngModel value="TODO" placeholder="Select Order Number" />
+        </div>
+
+        <!-- TODO: make complex, confusing(hard to desing) Return Item component -->
+        <div class="form-group row">
+            <label class="col-sm-2" for="itemsToReturn">Items to Return:</label>
+            <textarea value="TODO" name="itemsToReturn" ngModel placeholder="TODO: make a complicated widget">
+            </textarea>
+        </div>
+
+        <div class="row">
+            <h4>Autocalculated Fields</h4>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2">Refund Expected:</label>
+            <span>TODO: refund</span>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2">Items to Return:</label>
+            <span>TODO:</span>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2">Other things to put here?:</label>
+            <span>TODO:</span>
+        </div>
+
+        <div class="row">
+            <h4>Customer Shipping Information</h4>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingName">Name:</label>
+            <input type="text" name="shippingName" ngModel placeholder="Enter your name" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingAddress1">Address:</label>
+            <input type="text" name="shippingAddress1" ngModel placeholder="Address Line 1" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingAddress2">Address 2:</label>
+            <input type="text" name="shippingAddress2" ngModel placeholder="Address Line 2" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingAddress3">Address 3:</label>
+            <input type="text" name="shippingAddress3" ngModel placeholder="Address Line 3" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingCity">City:</label>
+            <input type="text" name="shippingCity" ngModel placeholder="City" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingState">State:</label>
+            <select name="shippingState" ngModel>
+                <option value="-1">TODO: Select State</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2" for="shippingCountry">Country:</label>
+            <select name="shippingCountry" ngModel>
+                <option value="-1">TODO: Select Country</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-8">
+                <button id="submit" name="submit" class="btn btn-primary" value="1">Submit</button>
+                <a [routerLink]="['/']" id="cancel" name="cancel" class="btn btn-default">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
