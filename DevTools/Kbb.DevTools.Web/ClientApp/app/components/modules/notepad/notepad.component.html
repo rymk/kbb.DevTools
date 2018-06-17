@@ -1,0 +1,20 @@
+﻿<h2>Notepad</h2>
+<h3>
+    Checklist
+</h3>
+<div class="table">
+    <div class="row">{{title}}</div>
+    <!--<checklist-item *ngFor="let note of notes" [(thenote)]="note"></checklist-item>-->
+    <checklist-item [thenote]="note"></checklist-item>
+    <div class="row">
+        <div class="cell">
+            TODO: plus sign
+        </div>
+        <div class="cell">
+            List item
+        </div>
+        <div class="cell">
+            &nbsp;
+        </div>
+    </div>
+</div>

@@ -21,9 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\app\components\modules\notepad\checklist-item.component.ts" />
+    <None Remove="ClientApp\app\components\modules\notepad\notepad.component.ts" />
     <None Remove="ClientApp\app\components\returns\returns.component.ts" />
     <None Remove="ClientApp\app\components\return\new-return.component.ts" />
     <None Remove="ClientApp\app\models\client-order.model.ts" />
+    <None Remove="ClientApp\app\models\modules\notepad\note.model.ts" />
     <None Remove="ClientApp\app\models\return.model.ts" />
   </ItemGroup>
 
@@ -33,9 +36,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\components\modules\notepad\checklist-item.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\modules\notepad\notepad.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\returns\returns.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\return\new-return.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\client-order.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\modules\notepad\note.model.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\return.model.ts" />
   </ItemGroup>
 

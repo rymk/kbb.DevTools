@@ -14,6 +14,10 @@ import { CounterComponent } from './components/counter/counter.component';
 import { ReturnsComponent } from './components/returns/returns.component';
 import { NewReturnComponent } from './components/return/new-return.component';
 
+// TODO: isolate all to notepad module
+import { NotepadComponent } from './components/modules/notepad/notepad.component'
+import {ChecklistItemComponent} from './components/modules/notepad/checklist-item.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -23,7 +27,10 @@ import { NewReturnComponent } from './components/return/new-return.component';
         HomeComponent,
 
         ReturnsComponent,
-        NewReturnComponent
+        NewReturnComponent,
+
+        NotepadComponent,
+        ChecklistItemComponent
     ],
     imports: [
         CommonModule,
@@ -36,6 +43,7 @@ import { NewReturnComponent } from './components/return/new-return.component';
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'returns', component: ReturnsComponent },
             { path: 'new-return', component: NewReturnComponent },
+            { path: 'notepad', component: NotepadComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
