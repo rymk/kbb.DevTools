@@ -1,11 +1,9 @@
-﻿<div class="row">
-    <div class="cell">
-        <input type="checkbox" ngModel="thenote.checked"/>
-    </div>
-    <div class="cell">
-        {{thenote.noteText}}
-    </div>
-    <div class="cell">
-        TODO: context menu
-    </div>
+﻿<div class="col-md-2">
+    <input type="checkbox" [checked]="theNote.checked" />
+</div>
+<div class="col-md-8">
+    {{theNote.noteText}}
+</div>
+<div class="col-md-2">
+    TODO: context menu
 </div>

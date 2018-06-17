@@ -7,11 +7,10 @@ import { Note } from '../../../models/modules/notepad/note.model';
     templateUrl: './checklist-item.component.html'
 })
 export class ChecklistItemComponent {
-    @Input() thenote: any;
+    @Input() theNote: Note = new Note();
     public inEditMode: boolean = false;
 
     constructor() {
-        console.log('thenote:', this.thenote);
+        console.log('thenote:', this.theNote);
     }
-    console.log('thenote111:', this.thenote);
 }

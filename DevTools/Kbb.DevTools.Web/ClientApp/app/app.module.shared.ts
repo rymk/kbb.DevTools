@@ -15,8 +15,8 @@ import { ReturnsComponent } from './components/returns/returns.component';
 import { NewReturnComponent } from './components/return/new-return.component';
 
 // TODO: isolate all to notepad module
+import { ChecklistItemComponent } from './components/modules/notepad/checklist-item.component';
 import { NotepadComponent } from './components/modules/notepad/notepad.component'
-import {ChecklistItemComponent} from './components/modules/notepad/checklist-item.component';
 
 @NgModule({
     declarations: [
